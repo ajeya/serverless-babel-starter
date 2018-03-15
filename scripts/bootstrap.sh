@@ -17,4 +17,6 @@ fi
 
 echo Installing Dependencies ...
 yarn install
+echo Committing hara-kiri
+rm -rf scripts
 echo Done.
