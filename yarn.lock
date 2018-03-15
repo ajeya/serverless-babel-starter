@@ -370,6 +370,20 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+aws-sdk@^2.177.0:
+  version "2.210.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.210.0.tgz#5aac0d77205926699262a11b3d22031af9de667c"
+  dependencies:
+    buffer "4.9.1"
+    events "^1.1.1"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.1.0"
+    xml2js "0.4.17"
+    xmlbuilder "4.2.1"
+
 aws-sdk@^2.75.0:
   version "2.130.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.130.0.tgz#f0c6da7dbda9a15cb0c2beb3030f6da2a4c03c36"
@@ -5422,6 +5436,13 @@ semver@~5.0.1:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.0.3.tgz#77466de589cd5d3c95f138aa78bc569a3cb5d27a"
 
+serverless-domain-manager@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-2.3.5.tgz#f40262974619c569d3d8839253a7ff64a2ed054e"
+  dependencies:
+    aws-sdk "^2.177.0"
+    chalk "^2.0.1"
+
 serverless-offline@^3.16.0:
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.16.0.tgz#1baa10a57e0e38c7bea2914ec846d79d04daf136"
@@ -5436,6 +5457,10 @@ serverless-offline@^3.16.0:
     jsonwebtoken "^7.4.3"
     lodash "^4.17.4"
     velocityjs "^0.9.3"
+
+serverless-pseudo-parameters@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/serverless-pseudo-parameters/-/serverless-pseudo-parameters-1.4.2.tgz#3a532c2d0d5a591dfa583cb1dc74ac0ba95df604"
 
 serverless-webpack@^4.2.0:
   version "4.2.0"

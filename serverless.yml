@@ -5,11 +5,20 @@ provider:
   runtime: nodejs6.10
   region: ap-southeast-2
   memorySize: 128
+  stage: ${opt:stage, 'dev'}
   apiKeys:
-    - ${self:service}-${opt:stage}
+    - ${self:service}-${self:provider.stage}
 
 custom:
   webpackIncludeModules: true
+  # Uncomment the lines below if you want to have a custom domain name for your service
+  # The service will be accessible at https://<domain_name>/<service_name>
+  # customDomain:
+  #   domainName: ${self:provider.stage}.${env:DOMAIN_NAME}
+  #   basePath: ${self:service}
+  #   stage: ${self:provider.stage}
+  #   createRoute53Record: true
+  #   endpointType: 'regional'
 
 
 functions:
@@ -28,4 +37,8 @@ functions:
 plugins:
   - serverless-webpack
   - serverless-offline
+  # Required for custom domains
+  # - serverless-domain-manager
+  # Required when using cloudformation pseudo parameters
+  # - serverless-pseudo-parameters
 
