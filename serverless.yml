@@ -19,6 +19,11 @@ custom:
   #   stage: ${self:provider.stage}
   #   createRoute53Record: true
   #   endpointType: 'regional'
+  # Uncomment when using serverless-plugin-aws-resolvers. Check documentation for more options
+  # awsResolvers:
+  # This will have to be false if the resource is being created with serverless
+  #   strict: false
+  # ess: "https://${aws:ess:service-name:Endpoint, 'www.google.com'}"
 
 
 functions:
@@ -41,4 +46,5 @@ plugins:
   # - serverless-domain-manager
   # Required when using cloudformation pseudo parameters
   # - serverless-pseudo-parameters
-
+  # Required when CF resources need to be resolved
+  # - serverless-plugin-aws-resolvers
