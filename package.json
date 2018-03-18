@@ -18,8 +18,8 @@
     "serve": "serverless offline start",
     "tail:hello": "serverless logs --function hello --tail",
     "test": "jest --watch",
-    "watch:hello": "serverless invoke local --watch --function hello --path fixtures/event.json",
-    "watch:warm": "serverless invoke local --watch --function hello --path fixtures/scheduled.json"
+    "watch:index": "serverless invoke local --watch --function index --path fixtures/event.json",
+    "watch:warm": "serverless invoke local --watch --function index --path fixtures/scheduled.json"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
